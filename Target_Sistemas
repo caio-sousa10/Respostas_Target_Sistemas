@@ -1,0 +1,64 @@
+1) O valor da variável SOMA será de: 91
+
+2) internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int i = 0;
+        int a = 0, n = 1, c = 1;
+        c = a + n; a = n; n = c;
+        i++;
+        Console.Write("Digite um número: ");
+        _ = Convert.ToInt32(Console.ReadLine());
+        if (IsFibonacci(n)) Console.WriteLine("{0} faz parte da sequência de Fibonacci.", n);
+        else Console.WriteLine("{0} não faz parte da sequência de Fibonacci.", n);
+        while (i < 10)
+        {
+            c = a + n; a = n; n = c;
+            i++;
+            Console.WriteLine("A sequência é " + (c));
+        }
+
+    }
+    static bool IsFibonacci(int n)
+    {
+        if (n == 0 || n == 1)
+            return true;
+        int a = 0, b = 1, c = 1;
+        while (c < n)
+        {
+            c = a + b; a = b; b = c;
+        }
+        return c == n;
+    }
+}
+
+3) A = 9
+   B= 128
+   C = 49
+   D = 100
+   E = 13
+   F = 29
+   
+ 4) A = O caminhão estará mais perto.
+    B = OK
+    C = Cheguei no resultado pois a velocidade do carro é maior e por isso abre uma maior vantagem mesmo após os valores convertidos de min para hora do caminhão.
+    
+ 5) using System;
+
+class stringinvertida
+{
+    static void Main(string[] args)
+    {
+        Console.Write("Digite a string: ");
+        string str = Console.ReadLine();
+
+        string invertidaStr = "";
+        for (int i = str.Length - 1; i >= 0; i--)
+        {
+            invertidaStr += str[i];
+        }
+
+        Console.WriteLine("A String ficou: " + invertidaStr);
+    }
+}
